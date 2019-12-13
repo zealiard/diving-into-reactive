@@ -9,7 +9,7 @@ import javax.annotation.PostConstruct
 @Component
 class TestClient(private val client: WebClient) {
 
-	@PostConstruct
+//	@PostConstruct
 	fun letsDoThis() {
 		client.get() // get 요청을 보낸다.
 			.uri("/coffees") // http://localhost:8080/coffees로 요청을 보낸다.
